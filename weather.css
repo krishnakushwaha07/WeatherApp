@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  
+  background-image: url("./Images/day.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+#input {
+  max-width: 30%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgb(232, 230, 230);
+  border-radius: 5px;
+   opacity: 0.8;
+}
+.box {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  gap: 0.5rem;
+  background: #edecec;
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: rgb(177, 177, 177) 0 0 10px;
+}
+.weatherinfo {
+  display: flex;
+
+  padding: 1rem;
+  gap: 3rem;
+}
+.condition {
+  padding: 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 50%;
+}
+.temp {
+  font-size: 8rem;
+}
+.celcius {
+  font-size: 4rem;
+}
+#temptext {
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+#location {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.moreinfo {
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+.moreinfo div {
+  display: flex;
+  flex-direction: column;
+}

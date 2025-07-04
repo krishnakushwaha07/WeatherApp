@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="Enter Location here" id="input" />
+
+      <div class="box">
+        <div id="location">
+            <i class="fa-solid fa-location-dot"></i>
+            kanpur uttar pradesh, india</div>
+        <div class="weatherinfo">
+          <div class="condition">
+           
+            <span class="temp">40<span class="celcius">&#8451</span></span>
+            <div id="temptext">
+                 <img src="./Images/image.png" alt="weather" height="50px" />
+                 <p>cloudy</p>
+            </div>
+            
+          </div>
+          <div class="moreinfo">
+            <div class="humidity">Humidity <span>32</span></div>
+            <div class="feelslike">Feels like <span>35</span>&#176</div>
+            <div class="wind">Wind<span>10</span>kph</div>
+            <div class="visibility">Visibility<span> 10</span>km</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
