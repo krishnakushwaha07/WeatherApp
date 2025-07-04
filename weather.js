@@ -18,8 +18,6 @@ let weather = async (city) => {
   const response = await fetch(newUrl);
   const data = await response.json();
 
-  console.log(data.location);
-  console.log(data.current);
   cityName.innerText = `${data.location.name} ${data.location.region},${data.location.country}`;
   temp.innerText = `${data.current.temp_c}`;
   msg.innerText = data.current.condition["text"];
