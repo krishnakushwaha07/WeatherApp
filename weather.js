@@ -33,7 +33,7 @@ let weather = async (city) => {
 };
 
 city.addEventListener("change", () => {
-  weather(city.value);
+  weather(city.value.trim());
 });
 
 window.addEventListener("load", () => {

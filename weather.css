@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.body {
+  height: 100vh;
+  width: 100vw;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -17,7 +21,7 @@
   background-size: cover;
 }
 #input {
-  width: 50%;
+  width: 550px;
   font-size: 1.5rem;
   padding: 1rem;
   border: 1px solid rgb(232, 230, 230);
@@ -25,6 +29,8 @@
   opacity: 0.8;
 }
 .box {
+  width: 550px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,12 +42,16 @@
   border-radius: 10px;
   box-shadow: rgb(177, 177, 177) 0 0 10px;
 }
-.weatherinfo {
-  display: flex;
 
+.weatherinfo {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   gap: 3rem;
 }
+
 .condition {
   padding: 0.5rem;
   font-size: 2rem;
@@ -50,13 +60,9 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  width: 50%;
 }
 .temp {
   font-size: 8rem;
-}
-.celcius {
-  font-size: 4rem;
 }
 #temptext {
   padding: 1rem;
@@ -64,7 +70,6 @@
   gap: 0.5rem;
 }
 #location {
-  width: 70%;
   display: flex;
   gap: 1rem;
   padding: 1rem;
@@ -92,4 +97,16 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: rgb(177, 177, 177) 0 0 10px;
+}
+
+@media screen and (max-width: 585px) {
+  .weatherinfo {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 350px;
+  }
+  #input {
+    width: 350px;
+  }
 }
