@@ -1,7 +1,7 @@
 const url =
   "https://api.weatherapi.com/v1/current.json?key=485c1438aead4ac1894132431250307&q=";
 
-const defaultCity = 'kanpur';
+const defaultCity = "kanpur";
 const cityInput = document.querySelector("#input");
 const temp = document.querySelector("#temp");
 const cityName = document.querySelector("#location p");
@@ -17,10 +17,10 @@ const button = document.querySelector("#btn");
 
 let weather = async (city) => {
   if (city === "") {
-    cityName.innerText = 'Please enter a valid location';
+    cityName.innerText = "Please enter a valid location";
     setTimeout(() => {
       weather(defaultCity);
-    },1000);
+    }, 1000);
     return;
   }
   const newUrl = `${url}${city}`; // prepare new url

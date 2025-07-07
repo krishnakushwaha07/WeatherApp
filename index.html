@@ -14,35 +14,38 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="box">
+    <div class="box">
+      <div class="locationinfo">
         <div class="inputbox">
           <input type="text" placeholder="Search Location here" id="input" />
-          <button id="btn">Search</button>
+          <button id="btn">
+            <img src="./Images/search.png" alt="search" />
+          </button>
         </div>
         <div id="location">
           <i class="fa-solid fa-location-dot"></i>
           <p>kanpur uttar pradesh, india</p>
         </div>
-        <div class="weatherinfo">
-          <div class="condition">
-            <div class="temp" id="temp"></div>
-            <div id="temptext">
-              <img src="./Images/image.png" alt="weather" height="50px" />
-              <p></p>
-            </div>
+      </div>
+      <div class="weatherinfo">
+        <div class="condition">
+          <div class="temp" id="temp"></div>
+          <div id="temptext">
+            <img src="./Images/image.png" alt="weather" height="50px" />
+            <p></p>
           </div>
-          <div class="moreinfo">
-            <div id="uv">UV <span> </span></div>
-            <div id="humidity">Humidity <span> </span></div>
-            <div id="feelslike">Feels like <span> </span></div>
-            <div id="wind">Wind <span> </span></div>
-            <div id="visibility">Visibility <span> </span></div>
-            <div id="pressure">Pressure <span> </span></div>
-          </div>
+        </div>
+        <div class="moreinfo">
+          <div id="uv">UV <span> </span></div>
+          <div id="humidity">Humidity <span> </span></div>
+          <div id="feelslike">Feels like <span> </span></div>
+          <div id="wind">Wind <span> </span></div>
+          <div id="visibility">Visibility <span> </span></div>
+          <div id="pressure">Pressure <span> </span></div>
         </div>
       </div>
     </div>
+
     <script src="weather.js"></script>
   </body>
 </html>
